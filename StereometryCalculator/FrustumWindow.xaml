@@ -1,0 +1,50 @@
+﻿<Window x:Class="StereometryCalculator.FrustumWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StereometryCalculator"
+        mc:Ignorable="d"
+        Title="FrustumWindow" Height="550" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Картинка с формулами -->
+        <Image Source="/images/Frustum_formuls.png" Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,94,0,0"
+       Width="490" Height="250" RenderTransformOrigin="0.491,0.355"/>
+
+        <!-- Поля ввода и вывода -->
+        <StackPanel Grid.Column="1" Margin="10">
+            <TextBlock Text="Радиус верхнего основания:" Margin="0 0 0 5"/>
+            <TextBox x:Name="UpperRadiusTextBox" Margin="0 0 0 5"/>
+
+            <TextBlock Text="Радиус нижнего основания:" Margin="0 10 0 5"/>
+            <TextBox x:Name="LowerRadiusTextBox" Margin="0 0 0 5"/>
+
+            <TextBlock Text="Высота:" Margin="0 10 0 5"/>
+            <TextBox x:Name="HeightTextBox" Margin="0 0 0 5"/>
+
+            <Button Content="Вычислить" Click="CalculateButton_Click" Margin="0 0 0 5"/>
+
+            <TextBlock Text="Площадь верхнего основания:" Margin="0 10 0 5"/>
+            <TextBlock x:Name="UpperBaseAreaTextBlock" Margin="0 0 0 5"/>
+
+            <TextBlock Text="Площадь нижнего основания:" Margin="0 10 0 5"/>
+            <TextBlock x:Name="LowerBaseAreaTextBlock" Margin="0 0 0 5"/>
+
+            <TextBlock Text="Площадь боковой поверхности:" Margin="0 10 0 5"/>
+            <TextBlock x:Name="SideAreaTextBlock" Margin="0 0 0 5"/>
+
+            <TextBlock Text="Общая площадь:" Margin="0 10 0 5"/>
+            <TextBlock x:Name="TotalAreaTextBlock" Margin="0 0 0 5"/>
+
+            <TextBlock Text="Объем:" Margin="0 10 0 5"/>
+            <TextBlock x:Name="VolumeTextBlock" Margin="0 0 0 5"/>
+
+            <Button Content="Вернуться назад" Click="BackButton_Click" Background="LightBlue" HorizontalAlignment="Right" Margin="0 0 0 10"/>
+        </StackPanel>
+    </Grid>
+</Window>

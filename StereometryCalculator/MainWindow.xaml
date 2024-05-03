@@ -1,0 +1,19 @@
+﻿<Window x:Class="StereometryCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StereometryCalculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="500">
+    <Grid>
+        <Image Source="/images/backgound.jpg"  Stretch="Fill"/>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Content="Сфера" Click="SphereButton_Click" Margin="5" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
+            <Button Content="Конус" Click="ConeButton_Click" Margin="5" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
+            <Button Content="Усеченный конус" Click="TruncatedConeButton_Click" Margin="5" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
+            <Button Content="Цилиндр" Click="CylinderButton_Click" Margin="5" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
+        </StackPanel>
+        <Button Content="Выход" Click="ExitButton_Click" Margin="5" FontSize="16" FontWeight="Bold" Background="LightBlue" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
+    </Grid>
+</Window>
